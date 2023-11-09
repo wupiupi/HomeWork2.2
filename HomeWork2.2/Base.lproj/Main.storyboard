@@ -38,33 +38,34 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4t-Fv-7Ac">
-                                <rect key="frame" x="16" y="681" width="343" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTb-sv-LYQ">
+                                <rect key="frame" x="137.66666666666666" y="680.33333333333337" width="100" height="42.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uog-ka-bs3"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnA-ja-QJc"/>
+                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="4LK-rp-cP8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         <constraints>
-                            <constraint firstItem="L4t-Fv-7Ac" firstAttribute="top" secondItem="pIq-tv-PGD" secondAttribute="bottom" constant="90" id="GId-DN-lwt"/>
                             <constraint firstItem="pIq-tv-PGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LTt-qp-EmC"/>
-                            <constraint firstItem="L4t-Fv-7Ac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NQD-bL-Mx3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L4t-Fv-7Ac" secondAttribute="bottom" constant="50" id="egf-6z-zra"/>
+                            <constraint firstItem="JTb-sv-LYQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lae-8P-TyD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JTb-sv-LYQ" secondAttribute="bottom" constant="55" id="gGg-mI-ynS"/>
+                            <constraint firstItem="JTb-sv-LYQ" firstAttribute="top" relation="lessThanOrEqual" secondItem="pIq-tv-PGD" secondAttribute="bottom" constant="97" id="iRD-Te-0aR"/>
                             <constraint firstItem="pIq-tv-PGD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kyn-qe-z2F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L4t-Fv-7Ac" secondAttribute="trailing" constant="16" id="srl-RY-ELT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="greenView" destination="A26-oy-6LA" id="uRq-pU-Ye4"/>
                         <outlet property="redView" destination="Fr1-hj-PyL" id="C79-Hk-QvR"/>
-                        <outlet property="startButtonView" destination="L4t-Fv-7Ac" id="K4E-ay-YFj"/>
+                        <outlet property="startButtonView" destination="JTb-sv-LYQ" id="Nta-B9-Q2s"/>
                         <outlet property="yellowView" destination="wO7-D8-AcL" id="S0d-Zq-yTD"/>
                     </connections>
                 </viewController>
