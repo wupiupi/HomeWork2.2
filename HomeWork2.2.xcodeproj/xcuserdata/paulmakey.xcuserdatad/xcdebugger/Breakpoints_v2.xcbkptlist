@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CC87E479-898A-42E8-8D6D-1FFAA6AA44B7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "969E1E82-8C52-4021-A33A-0A48382BD833"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeWork2.2/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "startButton()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "969E1E82-8C52-4021-A33A-0A48382BD833 - 97788b1399cffb72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2_2.ViewController.startButton() -&gt; ()"
+                  moduleName = "HomeWork2.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmakey/Desktop/Swift/SwiftBook/Homeworks/HomeWork2.2/HomeWork2.2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "969E1E82-8C52-4021-A33A-0A48382BD833 - 8302244799ceeefc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork2_2.ViewController.startButton(__C.UIView) -&gt; ()"
+                  moduleName = "HomeWork2.2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmakey/Desktop/Swift/SwiftBook/Homeworks/HomeWork2.2/HomeWork2.2/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

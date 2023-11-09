@@ -43,6 +43,7 @@ final class ViewController: UIViewController {
     
     @IBAction func startButton() {
         startButtonView.setTitle("Next", for: .normal)
+        
         switch currentLight {
             case .red:
                 redView.alpha = lightIsOff
