@@ -19,8 +19,6 @@ final class ViewController: UIViewController {
     @IBOutlet var yellowView: UIView!
     @IBOutlet var greenView: UIView!
     
-    @IBOutlet var startButton: UIButton!
-    
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
     
@@ -38,8 +36,8 @@ final class ViewController: UIViewController {
         greenView.alpha = lightIsOff
     }
     
-    @IBAction func buttonDidTapped() {
-        startButton.setTitle("Next", for: .normal)
+    @IBAction func buttonAction(_ sender: UIButton) {
+        sender.setTitle("Next", for: .normal)
         
         switch currentLight {
             case .red:
@@ -56,6 +54,7 @@ final class ViewController: UIViewController {
                 currentLight = .red
         }
     }
+    
 }
 
 
