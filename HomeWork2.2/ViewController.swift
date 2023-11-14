@@ -46,6 +46,7 @@ final class ViewController: UIViewController {
         
         if sender.titleLabel?.text == "Start" {
             sender.setTitle("Next", for: .normal)
+            sender.titleLabel?.font = UIFont.systemFont(ofSize: 26)
         }
         
         switch currentLight {
