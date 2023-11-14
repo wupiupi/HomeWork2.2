@@ -13,6 +13,7 @@
 		A062FA002AFD407300B25E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A062F9FE2AFD407300B25E49 /* Main.storyboard */; };
 		A062FA022AFD407400B25E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A062FA012AFD407400B25E49 /* Assets.xcassets */; };
 		A062FA052AFD407400B25E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A062FA032AFD407400B25E49 /* LaunchScreen.storyboard */; };
+		A0D1B1292B03D23A00936B56 /* Extension + ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D1B1282B03D23900936B56 /* Extension + ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A062FA012AFD407400B25E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A062FA042AFD407400B25E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A062FA062AFD407400B25E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D1B1282B03D23900936B56 /* Extension + ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		A062F9EC2AFD407300B25E49 = {
 			isa = PBXGroup;
 			children = (
+				A0D1B1282B03D23900936B56 /* Extension + ViewController.swift */,
 				A062F9F72AFD407300B25E49 /* HomeWork2.2 */,
 				A062F9F62AFD407300B25E49 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D1B1292B03D23A00936B56 /* Extension + ViewController.swift in Sources */,
 				A062F9FD2AFD407300B25E49 /* ViewController.swift in Sources */,
 				A062F9F92AFD407300B25E49 /* AppDelegate.swift in Sources */,
 				A062F9FB2AFD407300B25E49 /* SceneDelegate.swift in Sources */,
