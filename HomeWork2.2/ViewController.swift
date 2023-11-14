@@ -30,13 +30,15 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redView.layer.cornerRadius = redView.frame.width / 2
-        yellowView.layer.cornerRadius = yellowView.frame.width / 2
-        greenView.layer.cornerRadius = greenView.frame.width / 2
-        
         redView.alpha = lightIsOff
         yellowView.alpha = lightIsOff
         greenView.alpha = lightIsOff
+    }
+    
+    override func viewWillLayoutSubviews() {
+        redView.layer.cornerRadius = redView.frame.width / 2
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        greenView.layer.cornerRadius = greenView.frame.width / 2
     }
     
     // MARK: - IBAction

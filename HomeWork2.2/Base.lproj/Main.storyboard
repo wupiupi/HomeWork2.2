@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -14,53 +14,59 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTb-sv-LYQ">
-                                <rect key="frame" x="137.66666666666666" y="682.66666666666663" width="100" height="45.333333333333371"/>
+                                <rect key="frame" x="145" y="714.66666666666663" width="100" height="45.333333333333371"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="45.333333333333371" id="3xS-0T-0KL"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="hQa-d3-dWt"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="26"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L94-gn-lGJ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TA0-Y6-KLp">
-                                <rect key="frame" x="137.66666666666666" y="159" width="100" height="348"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr1-hj-PyL">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-D8-AcL">
-                                        <rect key="frame" x="0.0" y="124" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A26-oy-6LA">
-                                        <rect key="frame" x="0.0" y="248" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr1-hj-PyL">
+                                <rect key="frame" x="143" y="77" width="104" height="104"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="348" id="6uy-iX-OHD"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="8f4-xX-eMe"/>
-                                    <constraint firstAttribute="width" constant="100" id="9pr-gc-Hxr"/>
-                                    <constraint firstAttribute="height" constant="348" id="eet-fM-XKh"/>
+                                    <constraint firstAttribute="width" secondItem="Fr1-hj-PyL" secondAttribute="height" multiplier="1:1" id="GDx-Uj-9fu"/>
                                 </constraints>
-                            </stackView>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-D8-AcL">
+                                <rect key="frame" x="143" y="211" width="104" height="104"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wO7-D8-AcL" secondAttribute="height" multiplier="1:1" id="eg5-By-tlX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A26-oy-6LA">
+                                <rect key="frame" x="143" y="345" width="104" height="103.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A26-oy-6LA" secondAttribute="height" multiplier="1:1" id="0GU-Bw-bMg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         <constraints>
-                            <constraint firstItem="TA0-Y6-KLp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="90c-zI-t2V"/>
+                            <constraint firstItem="Fr1-hj-PyL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8f4-w1-iWW"/>
                             <constraint firstItem="JTb-sv-LYQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dW-Rj-PuE"/>
-                            <constraint firstItem="TA0-Y6-KLp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="ELC-g9-EUr"/>
+                            <constraint firstItem="A26-oy-6LA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ub-LS-ary"/>
+                            <constraint firstItem="wO7-D8-AcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PgX-x8-OjR"/>
+                            <constraint firstItem="A26-oy-6LA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.123153" id="Qf3-A3-G5N"/>
+                            <constraint firstItem="Fr1-hj-PyL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.123153" id="Qny-Wi-Yl0"/>
+                            <constraint firstItem="wO7-D8-AcL" firstAttribute="top" secondItem="Fr1-hj-PyL" secondAttribute="bottom" constant="30" id="SUH-A3-XjK"/>
+                            <constraint firstItem="Fr1-hj-PyL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Tb9-UK-iZF"/>
+                            <constraint firstItem="A26-oy-6LA" firstAttribute="top" secondItem="wO7-D8-AcL" secondAttribute="bottom" constant="30" id="UCS-I0-dEI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JTb-sv-LYQ" secondAttribute="bottom" constant="50" id="X9o-Cz-2QH"/>
+                            <constraint firstItem="wO7-D8-AcL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.123153" id="XL5-cU-1jm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,13 +82,13 @@
     </scenes>
     <resources>
         <systemColor name="quaternarySystemFillColor">
-            <color red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
