@@ -7,26 +7,29 @@
 
 import UIKit
 
-enum CurrentLight {
-    case red
-    case yellow
-    case green
-}
+// 1. IBOutlets
+// 2. Properties
+// 3. Life Cycle
+// 4. Methods
+// 5. Action
 
 final class ViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet var redView: UIView!
     @IBOutlet var yellowView: UIView!
     @IBOutlet var greenView: UIView!
     
+    // MARK: - Propertires
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
     
     private var currentLight = CurrentLight.green
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         redView.layer.cornerRadius = redView.frame.width / 2
         yellowView.layer.cornerRadius = yellowView.frame.width / 2
         greenView.layer.cornerRadius = greenView.frame.width / 2
@@ -36,8 +39,12 @@ final class ViewController: UIViewController {
         greenView.alpha = lightIsOff
     }
     
+    // MARK: - IBAction
     @IBAction func buttonAction(_ sender: UIButton) {
-        sender.setTitle("Next", for: .normal)
+        
+        if sender.titleLabel?.text == "Start" {
+            sender.setTitle("Next", for: .normal)
+        }
         
         switch currentLight {
             case .red:
@@ -54,7 +61,4 @@ final class ViewController: UIViewController {
                 currentLight = .red
         }
     }
-    
 }
-
-
